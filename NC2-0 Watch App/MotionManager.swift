@@ -15,7 +15,10 @@ class MotionManager: ObservableObject {
     private var startTime: Date?
     @Published var runningPace: Double = 0.0
     @Published var distanceTraveled: Double = 0.0
-
+    @Published var runningMic: Int = 0
+    @Published var runningSec: Int = 0
+    @Published var runningMin: Int = 0
+    
     func startRunning() {
         startTime = Date()
         distanceTraveled = 0.0
@@ -44,6 +47,19 @@ class MotionManager: ObservableObject {
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
             self.updateRunningPace()
         }
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
+            self.runningMic += 1
+            if self.runningMic == 99 {
+                self.runningMic = 0
+                self.runningSec += 1
+            }
+            if self.runningSec == 59 {
+                self.runningSec = 0
+                self.runningMin += 1
+            }
+        }
+        
     }
 
     func stopRunning() {
