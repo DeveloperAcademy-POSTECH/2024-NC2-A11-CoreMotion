@@ -54,21 +54,21 @@ struct ContentView: View {
                         Text("Time")
                             .font(.system(size: 15))
                             .fontWeight(.semibold)
-                        HStack(alignment: .bottom, spacing: 0) {
-                            Text("\(String(format: "0%.2f", motionManager.distanceTraveled))")
-                                .font(.system(size: 20))
-                                .fontWeight(.semibold)
-                            Text(" min")
-                                .font(.system(size: 13))
-                                .fontWeight(.semibold)
-                        }
+                        Text("\(String(format: "%02d:%02d:%02d", motionManager.runningMin, motionManager.runningSec, motionManager.runningMic))")
+                            .font(.system(size: 20))
+                            .fontWeight(.semibold)
                     }
                     Spacer()
                 }
-                Button(action: {
-                    motionManager.stopRunning()
-                }) {
-                    Text("Stop")
+                Button {
+                    if isRunning {
+                        motionManager.stopRunning()
+                    } else {
+                        motionManager.startRunning()
+                    }
+                    isRunning.toggle()
+                } label: {
+                    Text(isRunning ? "Stop" : "Restart")
 //                        .padding()
 //                        .background(Color.red)
                         .foregroundColor(.white)
@@ -83,10 +83,11 @@ struct ContentView: View {
         .background(motionManager.runningPace >= formattedGoalPace! - 0.2 && motionManager.runningPace <= formattedGoalPace! + 0.2 ? Color(.green) : Color(.red))
         .onAppear{
             motionManager.startRunning()
-            makeHaptics(with: .success)
         }
         .onChange(of: motionManager.runningPace) { oldValue, newValue in
-            
+            if newValue < formattedGoalPace! - 0.2 || newValue > formattedGoalPace! + 0.2 {
+                makeHaptics(with: .success)
+            }
         }
     }
     
