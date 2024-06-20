@@ -57,6 +57,7 @@ struct ContentView: View {
                         Text("\(String(format: "%02d:%02d:%02d", motionManager.runningMin, motionManager.runningSec, motionManager.runningMic))")
                             .font(.system(size: 20))
                             .fontWeight(.semibold)
+                            .monospacedDigit()
                     }
                     Spacer()
                 }
@@ -81,8 +82,9 @@ struct ContentView: View {
             .padding()
         }
         .background(motionManager.runningPace >= formattedGoalPace! - 0.2 && motionManager.runningPace <= formattedGoalPace! + 0.2 ? Color(.green) : Color(.red))
-        .onAppear{
+        .onAppear {
             motionManager.startRunning()
+            SessionExtend.shared.startSession()
         }
         .onChange(of: motionManager.runningPace) { oldValue, newValue in
             if newValue < formattedGoalPace! - 0.2 || newValue > formattedGoalPace! + 0.2 {

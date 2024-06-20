@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CA33CA72C213576008B71F7 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA33CA62C213576008B71F7 /* ResultView.swift */; };
+		3CA33CC72C22A871008B71F7 /* SessionExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA33CC62C22A871008B71F7 /* SessionExtend.swift */; };
 		3CA655112C1FFD8F00598375 /* NC2-0 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3CA655102C1FFD8F00598375 /* NC2-0 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3CA655162C1FFD8F00598375 /* NC2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA655152C1FFD8F00598375 /* NC2_0App.swift */; };
 		3CA655182C1FFD8F00598375 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA655172C1FFD8F00598375 /* ContentView.swift */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		3CA33CA62C213576008B71F7 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		3CA33CC52C22A829008B71F7 /* NC2-0-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NC2-0-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3CA33CC62C22A871008B71F7 /* SessionExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionExtend.swift; sourceTree = "<group>"; };
 		3CA6550A2C1FFD8F00598375 /* NC2-0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC2-0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA655102C1FFD8F00598375 /* NC2-0 Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC2-0 Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA655152C1FFD8F00598375 /* NC2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC2_0App.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		3CA655142C1FFD8F00598375 /* NC2-0 Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				3CA33CC52C22A829008B71F7 /* NC2-0-Watch-App-Info.plist */,
 				3CA655152C1FFD8F00598375 /* NC2_0App.swift */,
 				3CA6552D2C201B4100598375 /* SettingView.swift */,
 				3CA655172C1FFD8F00598375 /* ContentView.swift */,
@@ -91,6 +95,7 @@
 				3CA655192C1FFD9100598375 /* Assets.xcassets */,
 				3CA6551B2C1FFD9100598375 /* Preview Content */,
 				3CA655272C1FFF1400598375 /* MotionManager.swift */,
+				3CA33CC62C22A871008B71F7 /* SessionExtend.swift */,
 			);
 			path = "NC2-0 Watch App";
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			files = (
 				3CA655182C1FFD8F00598375 /* ContentView.swift in Sources */,
 				3CA6552E2C201B4100598375 /* SettingView.swift in Sources */,
+				3CA33CC72C22A871008B71F7 /* SessionExtend.swift in Sources */,
 				3CA33CA72C213576008B71F7 /* ResultView.swift in Sources */,
 				3CA655282C1FFF1400598375 /* MotionManager.swift in Sources */,
 				3CA655162C1FFD8F00598375 /* NC2_0App.swift in Sources */,
@@ -345,6 +351,7 @@
 				DEVELOPMENT_TEAM = C5ZC74W3Z4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NC2-0-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "NC2-0";
 				INFOPLIST_KEY_NSMotionUsageDescription = "Happy Happy Day!";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -376,6 +383,7 @@
 				DEVELOPMENT_TEAM = C5ZC74W3Z4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NC2-0-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "NC2-0";
 				INFOPLIST_KEY_NSMotionUsageDescription = "Happy Happy Day!";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
