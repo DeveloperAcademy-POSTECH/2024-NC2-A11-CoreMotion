@@ -20,7 +20,7 @@
 
 ## 🎯 What we focus on?
 - WatchOS
-- CMPedometer**
+- CMPedometer
   - `currentPace, currentCadence, distance`
 - WatchKit
   - `WKHapticType, WKInterfaceDevice`
