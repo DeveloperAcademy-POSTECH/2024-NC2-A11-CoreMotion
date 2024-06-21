@@ -29,7 +29,9 @@
 사전 설정한 목표 페이스를 미달/초과할 경우 진동으로 알림을 줘 페이스 유지에 도움을 준다.
 
 ## 🖼️ Prototype
-(프로토타입과 설명 추가)
+<img width="955" alt="스크린샷 2024-06-20 오후 5 33 29" src="https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A11-CoreMotion/assets/124751277/a29cba0e-648e-4053-9892-891e53520c2b">
+<img width="956" alt="스크린샷 2024-06-20 오후 5 33 36" src="https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A11-CoreMotion/assets/124751277/1dae53af-5dea-41e3-a412-edf5f3045f33">
 
 ## 🛠️ About Code
-(핵심 코드에 대한 설명 추가)
+<img width="958" alt="스크린샷 2024-06-21 오전 11 15 44" src="https://github.com/DeveloperAcademy-POSTECH/2024-NC2-A11-CoreMotion/assets/124751277/7909b09c-56e0-4c97-b965-7bde4831b9e8">
+
